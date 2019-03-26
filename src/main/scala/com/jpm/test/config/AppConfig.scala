@@ -8,6 +8,7 @@ case class AppConfig(input: String,
 
 object AppConfig {
 
+  // Apply method to read the values from config file
   def apply(): AppConfig = {
     val conf: Config = ConfigFactory.load().resolve().getConfig("app")
 
